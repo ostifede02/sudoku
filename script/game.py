@@ -44,6 +44,7 @@ def main():
             else:
                 state = DISPLAY
 
+    return 0
 
 
 if __name__ == "__main__":
