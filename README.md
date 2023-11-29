@@ -26,7 +26,7 @@ For this problem I structured the code with a finite state machine. The flow cha
 The class Sudoku contains all the methods and attributes to run the game. Each block of the chart above is described by a function within the class.
 
 ### levels
-In addition the user can choose between three different difficulty levels:
+In addition the user can choose between three different difficulty levels.
 + easy (just to test the program)
 + intermediate
 + hard
