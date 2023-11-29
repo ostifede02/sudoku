@@ -8,9 +8,9 @@ from sudoku import SudokuGame
 level = input("Enter the level: [type --help for more info.]")
 if level == "--help":
     print("Choose one of the following levels:")
-    print("* type 'e' for the easy level")
-    print("* type 'i' for the intermediate level")
-    print("* type 'd' for the difficult level")
+    print("+ type 'e' for the easy level")
+    print("+ type 'i' for the intermediate level")
+    print("+ type 'd' for the difficult level")
     level = input()
 
 game = SudokuGame(level)

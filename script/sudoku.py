@@ -57,9 +57,9 @@ class SudokuGame():
     
 
     def get_user_input(self):
-        self.row_input = input("input row [A-I]: ")
-        self.col_input = input("input col [1-9]: ")
-        self.num = input("input number [1-9]: ")
+        self.row_input = input("input row [A-I] and press Enter: ")
+        self.col_input = input("input col [1-9] and press Enter: ")
+        self.num = input("input number [1-9] and press Enter: ")
 
     
     def is_valid_input(self):
