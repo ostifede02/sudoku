@@ -3,7 +3,7 @@ import os
 from script.sudoku_levels import levels
 
 
-class Sudoku():
+class SudokuGame():
     def __init__(self, level):
         self.set_level(level)
 
@@ -33,11 +33,11 @@ class Sudoku():
 
         # *****  display game board   *****
         print("    1 2 3   4 5 6   7 8 9")
-        print("  -------------------------")
+        print("  -------- ------- --------")
         rows = "ABCDEFGHI"
         for i, row in enumerate(self.game_matrix_):
             if i % 3 == 0 and i > 0:
-                print("  -------------------------")
+                print("  -------- ------- --------")
             print(rows[i], "|", end=" ")
             for j, num in enumerate(row):
                 if j % 3 == 0 and j > 0:
@@ -47,7 +47,7 @@ class Sudoku():
                 else:
                     print(" ", end=" ")
             print("|")
-        print("  -------------------------\n")
+        print("  -------- ------- --------\n")
         return
     
 
@@ -65,7 +65,7 @@ class Sudoku():
     def is_valid_input(self):
         valid_rows = "ABCDEFGHI"
         valid_cols = "123456789"
-        valid_nums = "123456789"
+        valid_nums = "0123456789"
 
         if self.row_input not in valid_rows:
             self.log_info = "[ERROR!] [Invalid input] Please enter a valid value for row.\n"

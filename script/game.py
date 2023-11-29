@@ -1,11 +1,11 @@
-from sudoku import Sudoku
+from sudoku import SudokuGame
 
 
 # *** CHOOSE THE LEVEL DIFFICULTY ***
 # "easy" (solution: [A, 1] = 4)
 # "intermediate"
 # "difficult"
-game = Sudoku("easy")
+game = SudokuGame("difficult")
 
 # states
 DISPLAY             = "state1"
