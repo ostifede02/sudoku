@@ -66,7 +66,7 @@ root_matrix3 = np.array([root_matrix_A3, root_matrix_B3, root_matrix_C3,
 
 
 levels = {
-    "easy":         root_matrix1,
-    "intermediate": root_matrix2,
-    "difficult":    root_matrix3
+    "e":    root_matrix1,      # easy
+    "i":    root_matrix2,      # intermediate
+    "d":    root_matrix3       # difficult
 }

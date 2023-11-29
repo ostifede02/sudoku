@@ -1,6 +1,6 @@
 import numpy as np
 import os
-from script.sudoku_levels import levels
+from sudoku_levels import levels
 
 
 class SudokuGame():
@@ -26,7 +26,7 @@ class SudokuGame():
     # display the matrix on terminal
     def display(self):
         os.system('cls' if os.name == 'nt' else 'clear')    # clear the terminal
-
+        print("##### SUDOKU the game #####\n")
         if self.log_info is not None:   # if there has been an exception
             self.print_log_info()
             self.log_info = None
@@ -67,16 +67,19 @@ class SudokuGame():
         valid_cols = "123456789"
         valid_nums = "0123456789"
 
-        if self.row_input not in valid_rows:
+        if self.row_input not in valid_rows or self.row_input is None:
             self.log_info = "[ERROR!] [Invalid input] Please enter a valid value for row.\n"
             return False
-        elif self.col_input not in valid_cols:
+        elif self.col_input not in valid_cols or self.col_input is None:
             self.log_info = "[ERROR!] [Invalid input] Please enter a valid value for col.\n"
             return False
-        elif self.num not in valid_nums or int(self.num) > 9 or int(self.num) < 0:
+        elif self.num not in valid_nums or self.row_input is None:
             self.log_info = "[ERROR!] [Invalid input] Please enter a valid value for number.\n"
             return False
-
+        elif int(self.num) > 9 or int(self.num) < 0:
+            self.log_info = "[ERROR!] [Invalid input] Please enter a valid value for number.\n"
+            return False
+        
         # the user can't change the value of the root matrix
         self.row_index = int(ord(self.row_input) - ord("A"))
         self.col_index = int(self.col_input) - 1 
