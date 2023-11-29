@@ -5,7 +5,7 @@ from sudoku import SudokuGame
 # "easy" (solution: [A, 1] = 4)
 # "intermediate"
 # "difficult"
-level = input("Enter the level: [type --help for more info.]")
+level = input("Enter the level: [type --help for more info.]  ")
 if level == "--help":
     print("Choose one of the following levels:")
     print("+ type 'e' for the easy level")
@@ -47,6 +47,7 @@ def main():
 
         if state == CHECK_SOLUTION:
             if game.is_solution_correct():
+                game.clear_terminal()
                 game.print_log_info()
                 break
             else:

@@ -25,8 +25,9 @@ class SudokuGame():
 
     # display the matrix on terminal
     def display(self):
-        os.system('cls' if os.name == 'nt' else 'clear')    # clear the terminal
-        print("##### SUDOKU the game #####\n")
+        self.clear_terminal()
+        self.print_title()
+
         if self.log_info is not None:   # if there has been an exception
             self.print_log_info()
             self.log_info = None
@@ -50,6 +51,16 @@ class SudokuGame():
         print("  -------- ------- --------\n")
         return
     
+
+    def clear_terminal(self):
+        os.system('cls' if os.name == 'nt' else 'clear')    # clear the terminal
+        return
+    
+
+    def print_title(self):
+        print("##### SUDOKU the game #####\n")
+        return
+
 
     def print_log_info(self):
         print(self.log_info)
@@ -130,5 +141,5 @@ class SudokuGame():
                     self.log_info = f"[ERROR!] [Incorrect solution] Please double check the subgrid ({(row_start//3)+1}, {(col_start//3)+1}).\n"
                     return False
         
-        self.log_info = f"[INFO] Congratulations! You have solved the Sudoku!"
+        self.log_info = f"[INFO] Congratulations! You have solved the Sudoku!\n"
         return True
