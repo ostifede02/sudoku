@@ -4,7 +4,7 @@ In a terminal run the following command to clone the repository.
 ~~~
 git clone https://github.com/ostifede02/sudoku.git
 ~~~
-then run the following command to start the game.
+then run the following command to start the game (just for Linux users)
 ~~~
 cd sudoku/script/
 python3 game.py
