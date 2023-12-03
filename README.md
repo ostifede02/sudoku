@@ -6,6 +6,7 @@ git clone https://github.com/ostifede02/sudoku.git
 ~~~
 then run the following command to start the game.
 ~~~
+cd sudoku/script/
 python3 game.py
 ~~~
 
