@@ -1,8 +1,12 @@
 # Sudoku game
 ## setting up the environment
-Run the following command in terminal to clone the repository and test the script.
+In a terminal run the following command to clone the repository.
 ~~~
 git clone https://github.com/ostifede02/sudoku.git
+~~~
+then run the following command to start the game.
+~~~
+python3 game.py
 ~~~
 
 
@@ -33,4 +37,4 @@ In addition the user can choose between three different difficulty levels.
 
 
 ## sources
-I would like to mention that chat-gpt has been used for printing formatted text and the logic for checking if the sudoku has a correct solution.
+Chat-gpt has been used for printing formatted text and the logic for checking if the sudoku has a correct solution.
