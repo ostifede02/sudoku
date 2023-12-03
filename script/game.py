@@ -11,6 +11,8 @@ SELECT_LEVEL        = "state5"
 
 
 def main():
+    game.clear_terminal()
+    
     state = SELECT_LEVEL
     level = input("Enter the level: [type --help for more info.]  ")
     
