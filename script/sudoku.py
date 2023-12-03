@@ -4,9 +4,7 @@ from sudoku_levels import levels
 
 
 class SudokuGame():
-    def __init__(self, level):
-        self.set_level(level)
-
+    def __init__(self):
         self.row_input = None
         self.row_index = None
 
@@ -68,10 +66,19 @@ class SudokuGame():
     
 
     def get_user_input(self):
-        self.row_input = input("input row [A-I] and press Enter: ")
-        self.col_input = input("input col [1-9] and press Enter: ")
-        self.num = input("input number [1-9] and press Enter: ")
-
+        self.row_input = input("input row [A-I] and press Enter ('q' to quit): ")
+        if self.row_input == "q":
+            return None
+        
+        self.col_input = input("input col [1-9] and press Enter ('q' to quit): ")
+        if self.col_input == "q":
+            return None
+        
+        self.num = input("input number [1-9] and press Enter ('q' to quit): ")
+        if self.num == "q":
+            return None
+        
+        return True
     
     def is_valid_input(self):
         valid_rows = "ABCDEFGHI"
