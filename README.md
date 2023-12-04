@@ -1,5 +1,5 @@
 # Sudoku game
-## setting up the environment
+## setting up the environment (Linux)
 In a terminal run the following command to clone the repository.
 ~~~
 git clone https://github.com/ostifede02/sudoku.git
