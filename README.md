@@ -4,7 +4,7 @@ In a terminal run the following command to clone the repository.
 ~~~
 git clone https://github.com/ostifede02/sudoku.git
 ~~~
-then run the following command to start the game
+then run the following command to start the game (just for Linux users)
 ~~~
 cd sudoku/script/
 python3 game.py
@@ -23,19 +23,19 @@ python3 game.py
 
 ## script structure
 ### finite state machine
-For this problem I structured the code with a finite state machine. The flow chart below shows how it has been done.
+The code is structured with a finite state machine. The flow chart below gives a better understanding on how it has been done.
 
 ![Sudoku Rules](utils/images/flow_chart.png)
 
 ### class Sudoku
-The class Sudoku contains all the methods and attributes to run the game. Each block of the chart above is described by a function within the class.
+All the necessary methods and attributes to operate the Sudoku game are encapsulated within the Sudoku class. Each section of the chart is defined by a specific function within this class.
 
 ### levels
-In addition the user can choose between three different difficulty levels.
+Moreover, the user has the option to select from three distinct difficulty levels:
 + easy (just to test the program)
 + intermediate
 + hard
 
 
 ## sources
-Chat-gpt has been used for printing formatted text and the logic for checking if the sudoku has a correct solution.
+Chat-GPT has been employed for displaying formatted text on the terminal and implementing the logic to verify the correctness of a Sudoku solution.
