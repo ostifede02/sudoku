@@ -1,6 +1,5 @@
 from sudoku import SudokuGame
 
-game = SudokuGame()
 
 # states
 DISPLAY             = "state1"
@@ -11,6 +10,7 @@ SELECT_LEVEL        = "state5"
 
 
 def main():
+    game = SudokuGame()
     game.clear_terminal()
     
     state = SELECT_LEVEL
