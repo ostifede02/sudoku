@@ -38,4 +38,4 @@ Moreover, the user has the option to select from three distinct difficulty level
 
 
 ## sources
-Chat-GPT has been employed for displaying formatted text on the terminal and implementing the logic to verify the correctness of a Sudoku solution.
+Chat-GPT has been used for displaying formatted text on the terminal and implementing the logic to verify the correctness of a Sudoku solution.
