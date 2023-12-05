@@ -18,14 +18,14 @@ python3 game.py
 
 + **Blocks:** Each of the nine 3x3 subgrids must contain all the digits from 1 to 9 without repetition.
 
-![Sudoku Rules](utils/images/sudoku_rules.jpg)
+![Sudoku Rules](sources/images/sudoku_rules.jpg)
 
 
 ## script structure
 ### finite state machine
 The code is structured with a finite state machine. The flow chart below gives a better understanding on how it has been done.
 
-![Sudoku Rules](utils/images/flow_chart.png)
+![Sudoku Rules](sources/images/flow_chart.png)
 
 ### class Sudoku
 All the necessary methods and attributes to operate the Sudoku game are encapsulated within the Sudoku class. Each section of the chart is defined by a specific function within this class.
